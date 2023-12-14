@@ -15,3 +15,17 @@ function generateQrCode() {
         main.classList.add('show')
     }
 }
+ 
+function download(){
+    fetch(img.src)
+    .then(Response =>{
+        return Response.blob()
+    })
+    .then(blob=>{
+        let imgUrl = URL.createObjectURL(blob)
+        let a = document.createElement('a')
+        a.href = imgUrl
+        a.download = "Qrcode"
+        a.click()
+    })
+}

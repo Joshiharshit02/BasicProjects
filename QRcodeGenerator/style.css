@@ -1,22 +1,22 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-   }
-  
-  :root{
-    --primaryColor:#9400ff;
+}
+
+:root {
+    --primaryColor: #9400ff;
     --radus: 3px;
-  }
-  
-   body{
+}
+
+body {
     display: grid;
     place-items: center;
     min-height: 100vh;
     background-color: var(--primaryColor);
-   }
-  
-   main{
+}
+
+main {
     width: 90%;
     max-width: 400px;
     height: 210px;
@@ -27,20 +27,22 @@
     gap: 20px;
     padding: 30px;
     overflow: hidden;
+    /* to hide qr code from before */
     transition: .2s;
-   }
-   .show{
+}
+
+.show {
     height: 480px;
-   }
-  
-   input{
+}
+
+input {
     padding: 10px;
     font-size: 20px;
     border: 2px solid var(--primaryColor);
     border-radius: var(--radus);
-   }
-  
-   button{
+}
+
+button {
     padding: 10px;
     font-size: 20px;
     background-color: var(--primaryColor);
@@ -48,11 +50,11 @@
     border-radius: var(--radus);
     color: white;
     font-weight: bold;
-   }
-  
-   .qrbox{
+}
+
+.qrbox {
     text-align: center;
     padding: 10px;
     border-radius: var(--radus);
     border: 2px solid var(--primaryColor);
-   }
+}
